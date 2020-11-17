@@ -449,9 +449,14 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     margin-top: 250px;
+    margin-bottom: 60px;
 }
 .contact_questions {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 420px;
+
 }
 .contact_questions h2 {
     font-family: var(--font-raleway);
@@ -494,20 +499,102 @@ header {
     margin-right: 10px;  
 }
 .contact_form label {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.contact_form label .checkbox {
+    display: inline-block;
 }
 .contact_form {
     width: 440px;
+    margin-left: 20px;
+    position: relative;
 }
-
-
-
-
-
-
-
+input[type="text"],
+input[type="email"] {
+    border: transparent;
+    border-bottom: 1px solid #95989A;
+    padding: 20px;
+}
+.contact_form .name,
+.contact_form .email {
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+    text-transform: uppercase;
+}
+.checkbox div {
+    /* position: absolute; */
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 12px;
+    color: #707070;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border:1px solid #95989A;
+    border-radius: 4px;
+    position: relative;
+    top: 24px;
+}
+input[type="checkbox"]:checked {
+    background-image: url(../assets/Checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact_form .checkbox {
+    /* margin-top: 30px; */
+}
+.contact .button a {
+    height: 57px;
+    width: 226px;
+    display: block;
+    float: right;
+    background-color: #08A6E4;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    line-height: 57px;
+    text-align: center;
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
 footer {
     height: 90px;
     background-color: #F7F7F7;
     box-shadow: 0px -5px 40px #00000029;
 }
+footer .container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_footer a {
+    font-family: var(--font-raleway);
+    font-size: 26px;
+    font-weight: 300;
+    color: #08A6E4;
+    text-decoration: none;
+}
+.logo_footer p {
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 10px;
+    color: #A5A5A5;
+}
+.socials img {
+    padding: 0 10px;
+}
+
