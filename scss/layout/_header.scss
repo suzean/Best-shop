@@ -1,0 +1,92 @@
+header {
+    height: 70px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    @media (max-width: $mobile) {
+        width: 100vw;
+        height: 100px;
+    }
+    .header_contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .logo {
+            font-family: $font-raleway;
+            font-size: 32px;
+            font-weight: 300;
+            color: #08A6E4;
+        }
+        .header_nav {
+           
+            padding-right: 20px;
+            ul {
+                display: flex;
+                li {
+                    a {
+                        color: #A5A5A5;
+                        letter-spacing: 3.28px;
+                        text-transform: uppercase;
+                        font-family: $font-open-sans;
+                        font-weight: 700;
+                        font-size: 11px;
+                        padding: 28px 5px 27px;
+                        margin: 30px;
+                    }
+                    a:hover {
+                        border-bottom: 4px solid #08A6E4;
+                        width: 40px;
+                        color: #000000;
+                    }
+                }
+            }
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+        
+    }
+}
+
+
+//big image below header
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        width: 100%;
+    }
+    &-text {
+        margin-top: 130px;
+        text-align: center;
+        h1 {
+            font-family: $font-raleway ;
+            font-size: 49px;
+            font-weight: 400;
+            color: #000000;
+        }
+        p {
+            margin: 20px 0 38px;
+            font-family: $font-open-sans;
+            font-size: 16px;
+            font-weight: 400;
+            color:#000000;
+        }
+        a {
+            width: 440px;
+            height: 67px;
+            background-color: #08A6E4;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-family: var(--font-open-sans);
+            font-weight: 700;
+            display: block;
+            margin: 0 auto;
+            border-radius: 40px;
+            box-shadow: 5px 10px 14px #07ACE629;
+            line-height: 67px;
+        }
+    }
+}
+
+
